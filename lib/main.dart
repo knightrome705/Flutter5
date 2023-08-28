@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:get/get_navigation/src/root/get_material_app.dart';
 import 'package:provider/provider.dart';
+import 'package:ui/Navigation_short.dart';
 import 'package:ui/page2.dart';
 import 'package:ui/provider.dart';
 
@@ -20,9 +22,9 @@ class _MyAppState extends State<MyApp> {
   Widget build(BuildContext context) {
     return ChangeNotifierProvider(
       create: (context) => Default(),
-      child: MaterialApp(
+      child: GetMaterialApp(
         debugShowCheckedModeBanner: false,
-        home: Home(),
+        home: Nav(),
       ),
     );
   }
