@@ -6,6 +6,7 @@ import 'package:ui/page2.dart';
 import 'package:ui/provider.dart';
 
 import 'Home.dart';
+import 'PopupMenuButton.dart';
 
 void main(){
   runApp(MyApp());
@@ -24,7 +25,7 @@ class _MyAppState extends State<MyApp> {
       create: (context) => Default(),
       child: GetMaterialApp(
         debugShowCheckedModeBanner: false,
-        home: Nav(),
+        home: PopupManuButton(),
       ),
     );
   }
